@@ -10,7 +10,7 @@ export const navs =[
     {
         id:2,
         name:'SYMPTOM CHECKER',
-        link:'/',
+        link:'/chatbot',
         active:false,
 
     },
@@ -18,7 +18,7 @@ export const navs =[
     {
         id:3,
         name:'MAP',
-        link:'/map',
+        target:'map',
         active:false,
         
     },
