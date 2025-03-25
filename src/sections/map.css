@@ -1,14 +1,24 @@
 .map-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-  }
-  
-  .map {
-    width: 80%;
-    height: 450px;
-    border: 0;
-    border-radius: 10px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 100px;
+}
 
-  }
+.map {
+  width: 80%;
+  height: 450px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.map-title {
+  justify-content: left;
+  font-size: 36px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+  font-family: "EB Garamond", serif;
+}

@@ -1,5 +1,7 @@
+'use client'
+
 import React from 'react';
-import { navs } from '@/data/data';
+import { navs } from '../data/data.js';
 import './nav.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';

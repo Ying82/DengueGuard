@@ -1,8 +1,8 @@
 .view-more-btn {
-    background-color:#1CDAE6; 
-    color: white;
+    color:#1CDAE6; 
+    font-family: Helvetica;
     padding: 10px 15px;
-    font-size: 1rem;
+    font-size: 16px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -11,5 +11,5 @@
 }
 
 .view-more-btn:hover {
-    background-color:rgb(250, 65, 56) ;
+   text-decoration: underline;
 }
