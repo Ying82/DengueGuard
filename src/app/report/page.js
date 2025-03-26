@@ -16,7 +16,7 @@ export default function ReportPage() {
   const [location, setLocation] = useState(center); // Stores selected location
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(null);
-  const GOOGLE_MAPS_API_KEY = "AIzaSyAzoykP97B-mUEJK3oSdhLtmV4jO0hGLwM";
+  const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
 
   const handleMapClick = (event) => {
     setLocation({

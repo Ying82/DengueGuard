@@ -112,7 +112,7 @@ export default function Map() {
 
       <div className="w-4/5 max-h-400 border-0 rounded-lg mb-10 relative">
         <LoadScript
-          googleMapsApiKey="AIzaSyAzoykP97B-mUEJK3oSdhLtmV4jO0hGLwM"
+          googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
           libraries={["visualization"]}
         >
           <GoogleMap
