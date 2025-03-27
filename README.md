@@ -39,7 +39,7 @@ This AI-powered web platform helps users assess dengue risk, report mosquito bre
    
 2. Install dependencies:
   ```sh
-   npm install
+  npm install
 
 4. Set up environment variables:
     - Create a .env.local file in the root directory.
@@ -50,5 +50,5 @@ This AI-powered web platform helps users assess dengue risk, report mosquito bre
 
 5. Run the development server:
   ```sh
-   npm run dev
+  npm run dev
    
