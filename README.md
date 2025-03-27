@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🦟 Dengue Risk Prediction & Reporting Platform - DENGUEGUARD
+## Deployment Link
+【DENGUEGUARD】(https://dengueguard.vercel.app/)
 
-## Getting Started
+## Demo Video
 
-First, run the development server:
+## Overview
+This AI-powered web platform helps users assess dengue risk, report mosquito breeding sites, and visualize outbreak trends. It provides:
+- **Dengue Outbreak & Risk Map** – Displays high-risk areas using user reports and AI predictions.
+- **Report Mosquito Breeding Sites** – Users can report potential breeding sites by selecting locations on the map.
+- **AI-Powered Symptom Checker** – Assesses users' dengue risk based on symptoms, including image-based rash detection.
+- **Real-Time Weather & Dengue Data** – Integrates Google Maps API and OpenWeather API for location-based insights.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+- **Interactive Map** – Displays:
+  - 🔴 **Red Areas:** User-reported mosquito breeding sites.
+  - 🔵 **Blue Areas:** AI-predicted high-risk zones based on environmental data.
+- **Chatbot Symptom Checker** – Users can enter symptoms and receive an AI-based dengue risk assessment.  
+- **User-Friendly Reporting** – Allows users to submit locations, descriptions, and images of mosquito breeding sites.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠Technology Stack
+- **Front-End:** Next.js, Tailwind CSS
+- **APIs:** Google Maps API, OpenWeather API, Malaysia Health Data
+- **Future Backend Considerations:** Firebase, Node.js, TensorFlow
+- **Future ML Models:**
+  - **Symptom Checker** (NLP-based analysis)
+  - **Outbreak Prediction** (AI model trained on weather & past dengue cases)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Installation & Setup
+### Prerequisites
+- Node.js & npm installed
+- Google Maps API key
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/dengue-website.git
+   cd dengue-website
+   
+2. Install dependencies:
+    npm install
 
-## Learn More
+3. Set up environment variables:
+    - Create a .env.local file in the root directory.
+    - Add your Google Maps API key:
+  
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_api_key_here
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Run the development server:
+   npm run dev
+   
