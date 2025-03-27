@@ -20,7 +20,7 @@ This AI-powered web platform helps users assess dengue risk, report mosquito bre
 
 ## 🛠Technology Stack
 - **Front-End:** Next.js, Tailwind CSS
-- **APIs:** Google Maps API, OpenWeather API, Malaysia Health Data
+- **Future APIs Considerations:** Google Maps API, OpenWeather API, Malaysia Health Data
 - **Future Backend Considerations:** Firebase, Node.js, TensorFlow
 - **Future ML Models:**
   - **Symptom Checker** (NLP-based analysis)
