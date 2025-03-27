@@ -1,6 +1,6 @@
 import About from "@/sections/About";
 import Hero from "@/sections/Hero";
-import Viewmorebtn from "@/components/viewmorebtn";
+import Viewmorebtn from "@/components/Viewmorebtn";
 import Image from "next/image";
 import Map from "@/sections/Map";
 import Report from "@/sections/Report";
