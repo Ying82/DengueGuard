@@ -10,8 +10,7 @@ export default function Home() {
     <>
       <section className="min-w-full flex items-center min-h-screen bg-gray-100 p-0">
         <div className="bg-white shadow-lg overflow-hidden min-h-screen min-w-full grid grid-cols-7">
-          {/* Left Section - Image (2/3 width) */}
-          <div className="border-20 border-[#1CDAE6] mt-25 relative h-full md:h-auto col-span-4">
+          <div className="border-20 border-[#1CDAE6] relative h-full md:h-auto col-span-4">
             <Image
               src="/picture/breeding-site.jpg"
               alt="Dengue Awareness"
@@ -21,7 +20,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Right Section - Text Content (1/3 width) */}
           <div className="bg-[#030D19] text-white p-10 pt-55 flex flex-col items-center justify-center col-span-3">
             <div>
               <p className="text-7xl font-bold uppercase">
@@ -37,10 +35,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* <section className="hero-background">
-        {/* {<Image src={"/picture/BACKGROUND.png"} alt="Dengue Awareness" layout="fill" objectFit="cover" priority /> }
-      </section> */}
 
       <main id="main">
         <Hero />

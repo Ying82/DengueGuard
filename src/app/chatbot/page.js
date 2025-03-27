@@ -34,24 +34,25 @@ export default function Chatbot() {
     setMessages((prev) => [...prev, { sender: "user", text: input }]);
     setInput("");
 
-    // Check if both "rash" and "fever" are mentioned together
-    if (userMessage.includes("rash") && userMessage.includes("fever")) {
+    // 🔹 Check if "rash" is mentioned (with or without fever) and request an image
+    if (userMessage.includes("rash")) {
       setMessages((prev) => [
         ...prev,
         {
           sender: "bot",
-          text: "Since you have a fever and a rash, please upload an image for analysis.",
+          text: "Since you mentioned a rash, please upload an image for analysis.",
         },
       ]);
       setWaitingForImage(true);
       setRashAndFeverDetected(true);
-    } else if (!rashAndFeverDetected) {
-      // If rash+fever was NOT detected earlier, proceed with risk assessment
-      setTimeout(() => {
-        const response = generateRiskAssessment(userMessage);
-        setMessages((prev) => [...prev, { sender: "bot", text: response }]);
-      }, 1000);
+      return; // Stop further processing so it doesn't send another risk assessment message
     }
+
+    // 🔹 If "rash" is NOT mentioned, proceed with risk assessment
+    setTimeout(() => {
+      const response = generateRiskAssessment(userMessage);
+      setMessages((prev) => [...prev, { sender: "bot", text: response }]);
+    }, 1000);
   };
 
   const handleImageUpload = (e) => {

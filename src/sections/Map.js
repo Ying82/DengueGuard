@@ -16,7 +16,6 @@ const containerStyle = {
 
 const center = { lat: 3.140634, lng: 101.6909882 };
 
-// 🔴 Outbreak areas
 const highRiskAreas = [
   {
     name: "BK",
@@ -29,7 +28,6 @@ const highRiskAreas = [
   },
 ];
 
-// 🔵 Predicted outbreak zones
 const predictedOutbreakAreas = [
   {
     name: "Johor Bahru",
@@ -43,7 +41,6 @@ const predictedOutbreakAreas = [
   },
 ];
 
-// 🦟 Dengue cases for heatmap
 const mockDengueCases = [
   { lat: 3.1408, lng: 101.6932 },
   { lat: 5.4141, lng: 100.3288 },
@@ -69,7 +66,6 @@ export default function Map() {
   }, []);
 
   useEffect(() => {
-    // Load previously reported sites from localStorage
     const storedReports = JSON.parse(localStorage.getItem("reports")) || [];
     setReportedSites(storedReports);
   }, []);
@@ -92,10 +88,10 @@ export default function Map() {
     const base64Image = await convertBlobToBase64(file);
 
     const newReport = {
-      lat: center.lat + (Math.random() - 0.5) * 0.02, // Random offset for new markers
+      lat: center.lat + (Math.random() - 0.5) * 0.02,
       lng: center.lng + (Math.random() - 0.5) * 0.02,
-      description: "Standing Water", // Example description
-      image: base64Image, // Store as Base64
+      description: "Standing Water",
+      image: base64Image,
     };
 
     const updatedReports = [...reportedSites, newReport];
@@ -120,7 +116,6 @@ export default function Map() {
             center={center}
             zoom={6}
           >
-            {/* 🔴 Heatmap */}
             {heatmapData.length > 0 && (
               <HeatmapLayerF
                 data={heatmapData}
@@ -128,7 +123,6 @@ export default function Map() {
               />
             )}
 
-            {/* 🔴 Polygons for real outbreak zones */}
             {highRiskAreas.map((area, index) => (
               <Polygon
                 key={index}
@@ -142,7 +136,6 @@ export default function Map() {
               />
             ))}
 
-            {/* 🔵 Polygons for predicted outbreak zones */}
             {predictedOutbreakAreas.map((area, index) => (
               <Polygon
                 key={index}
@@ -156,7 +149,6 @@ export default function Map() {
               />
             ))}
 
-            {/* 🟢 Custom Markers for Reported Sites */}
             {reportedSites.map((site, index) => (
               <Marker
                 key={index}
@@ -173,7 +165,6 @@ export default function Map() {
               />
             ))}
 
-            {/* Show InfoWindow when a marker is clicked */}
             {selectedMarker && (
               <InfoWindow
                 position={{ lat: selectedMarker.lat, lng: selectedMarker.lng }}
@@ -199,7 +190,6 @@ export default function Map() {
         </LoadScript>
       </div>
 
-      {/* 🔴🟦 Legend */}
       <div className="bottom-10 right-10 bg-white p-4 rounded-lg shadow-lg mb-20">
         <h3 className="text-lg font-bold">Map Indicators</h3>
         <div className="flex items-center mt-2">
