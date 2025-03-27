@@ -1,4 +1,4 @@
-## DengueGuard
+### DengueGuard
 ## Deployment Link
 [DengueGuard](https://dengueguard.vercel.app/)
 
