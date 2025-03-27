@@ -1,8 +1,9 @@
 ## DengueGuard
 ## Deployment Link
-【DENGUEGUARD】(https://dengueguard.vercel.app/)
+[DengueGuard](https://dengueguard.vercel.app/)
 
 ## Demo Video
+(https://drive.google.com/drive/folders/1I2_7sYr0NSuGD-AVmpJEvBQ_de0dKOK_?usp=sharing)
 
 ## Overview
 This AI-powered web platform helps users assess dengue risk, report mosquito breeding sites, and visualize outbreak trends. It provides:
