@@ -1,4 +1,4 @@
-# 🦟 Dengue Risk Prediction & Reporting Platform - DENGUEGUARD
+## DengueGuard
 ## Deployment Link
 【DENGUEGUARD】(https://dengueguard.vercel.app/)
 
