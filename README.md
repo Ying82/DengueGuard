@@ -38,14 +38,17 @@ This AI-powered web platform helps users assess dengue risk, report mosquito bre
    cd dengue-website
    
 2. Install dependencies:
-    npm install
+  ```sh
+   npm install
 
-3. Set up environment variables:
+4. Set up environment variables:
     - Create a .env.local file in the root directory.
     - Add your Google Maps API key:
   
-    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_api_key_here
+      ```sh
+      NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your_api_key_here
 
-4. Run the development server:
+5. Run the development server:
+  ```sh
    npm run dev
    
